@@ -4,6 +4,15 @@
 Console.WriteLine("Введите два числа:");
 int a = int.Parse(Console.ReadLine());
  int b = int.Parse(Console.ReadLine());
-Console.WriteLine("a^b = " + Math.Pow(a, b));
+Console.WriteLine("a^b = " + Pow(a,b));
+ 
+int Pow(int a, int b){
+ int res = a;
 
-int i = Convert.ToInt32(Math.Pow(a, b));
+    for (int i = 1; i < b; i++)
+    {
+        res = res * a;
+    }
+
+    return res;
+}

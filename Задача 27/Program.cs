@@ -4,7 +4,11 @@
 Console.Write ("Введите число:");
 int a = int.Parse (Console.ReadLine());
 
-    int s = 0;
+    
+ Console.WriteLine(Sum(a));
+
+ int Sum(int a){
+  int s = 0;
     while (a > 0)
    {
 
@@ -12,4 +16,6 @@ int a = int.Parse (Console.ReadLine());
     a = a /10 ;
  
    }
- Console.WriteLine(s);
+   return s;
+
+ }
